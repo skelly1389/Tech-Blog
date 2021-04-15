@@ -1,12 +1,15 @@
 {
-  "name": "Tech Blog",
+  "name": "tech-blog",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple tech blog with user authentication",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "seed": "node seeds/index.js"
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skelly1389/Tech-Blog.git"
   },
   "author": "Sean Kelly",
   "license": "MIT",
@@ -20,5 +23,9 @@
     "handlebars": "^4.7.6",
     "mysql2": "^2.2.5",
     "sequelize": "^6.3.5"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/skelly1389/Tech-Blog/issues"
+  },
+  "homepage": "https://github.com/skelly1389/Tech-Blog#readme"
 }
