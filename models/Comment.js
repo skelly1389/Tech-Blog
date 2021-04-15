@@ -31,4 +31,4 @@ Comment.init(
   }
 );
 
-module.exports = Painting;
+module.exports = Comment;
