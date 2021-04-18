@@ -1,15 +1,13 @@
 const router = require('express').Router();
-const { Gallery, Painting } = require('../models');
-// Import the custom middleware
+const { User, Post, Comment } = require('../models');
 const withAuth = require('../utils/auth');
 
-// GET all galleries for homepage
 router.get('/', async (req, res) => {
   try {
-    const dbGalleryData = await Gallery.findAll({
+    const dbPostData = await Post.findAll({
       include: [
         {
-          model: Painting,
+          model: Comment,
           attributes: ['filename', 'description'],
         },
       ],
